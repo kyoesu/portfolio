@@ -1,0 +1,12 @@
+body{
+    margin: auto;
+}
+#footer{
+    width: 90%;
+    height: 500px;
+    background: linear-gradient(to bottom left,#050b7c,#3d0101);
+    color: rgb(232, 217, 217);
+    padding: 5%;
+}
+
+
