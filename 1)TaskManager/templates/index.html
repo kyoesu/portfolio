@@ -2,13 +2,17 @@
 <!--для работы python-->
 <link rel="stylesheet" href="{{ url_for('static', filename= 'styles.css') }}">
 <script src="{{ url_for('static', filename= 'sc.js') }}"></script>
+<link rel="icon" href="{{ url_for('static', filename= 'fav.ico') }}">
 <!--для отладки в браузере-->
 <link rel="stylesheet" href="../static/styles.css">
-<script src="../static/sc.js"></script>
+<script src="../static/sc.js"></script> 
 
 
 <html>
-<title>Task Manager</title>
+<head>
+    <title>Task Manager</title>    
+</head>
+
 <body>
 <header>
     <div>
@@ -17,12 +21,14 @@
 </header>
 
 
+<button type="button" onClick="onClick()">жамк</button>
+        <p>кликнули: <a id="clicks">0</a></p>
+        <br><br><br><br>
+
 
 <div id="footer">
     <div style="height: 100%;">
-        <button type="button" onClick="onClick()">жамк</button>
-        <p>кликнули: <a id="clicks">0</a></p>
-        <br><br><br><br>
+        
       
 
 
