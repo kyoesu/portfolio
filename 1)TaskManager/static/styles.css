@@ -9,4 +9,22 @@ body{
     padding: 5%;
 }
 
+#descript{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 200px;
+    justify-content: space-around; 
+}
+.foot_table{
+    display: flex;
+    flex-direction: column;
+    /*width: 21%;*/
+}
 
+#dow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
