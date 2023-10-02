@@ -1,36 +1,44 @@
 <!DOCTYPE html>
-<!--для работы python-->
-<link rel="stylesheet" href="{{ url_for('static', filename= 'styles.css') }}">
-<script src="{{ url_for('static', filename= 'sc.js') }}"></script>
-<link rel="icon" href="{{ url_for('static', filename= 'fav.ico') }}">
-<!--для отладки в браузере-->
-<link rel="stylesheet" href="../static/styles.css">
-<script src="../static/sc.js"></script> 
-
-
 <html>
 <head>
-    <title>Task Manager</title>    
+    <title>Task Manager</title>
+    <!--для работы python-->
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'styles.css') }}">
+    <script src="{{ url_for('static', filename= 'sc.js') }}"></script>
+    <link rel="icon" href="{{ url_for('static', filename= 'fav.ico') }}">
+    <!--для отладки в браузере-->
+    <link rel="stylesheet" href="../static/styles.css">
+    <script src="../static/sc.js"></script>     
 </head>
 
 <body>
 <header>
     <div>
-        
+        <br>
+    </div>
+    <div id="men">
+        <img src="{{ url_for('static', filename= 'fav.ico') }}" height="100%" width="100vh" alt="logo">
+        <div><h4>This project</h4><p></p></div>
+        <div><h4>My projects</h4><p></p></div>
+        <div><h4>About Me</h4><p></p></div>
+        <div><h4>Something else</h4><p></p></div>
+        <div><h4>Contacts</h4><p></p></div>
     </div>
 </header>
 
+<div id="head">
 
+</div>
 <button type="button" onClick="onClick()">жамк</button>
         <p>кликнули: <a id="clicks">0</a></p>
         <br><br><br><br>
 
 
-<div id="footer">
+<footer>
     <div style="height: 100%;">
         <div id="descript">
             
-            <div class="foot_table"><h4>This project</h4><p></p></div>
+            <div class="foot_table"><h4>This project</h4><p>rrr</p></div>
             <div class="foot_table"><h4>My projects</h4><p></p></div>
             <div class="foot_table"><h4>About Me</h4><p></p></div>
             <div class="foot_table"><h4>Something else</h4><p></p></div>
@@ -52,7 +60,7 @@
         </div>
         <p>©️ created by Kyoesu </p>
     </div>    
-</div>
+</footer>
 
 
 
