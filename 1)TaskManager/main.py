@@ -10,12 +10,12 @@ def index():
 @app.route('/sign_in')
 def sign_in():
     
-    return "hello world" 
+    return "hello world/sign_in" 
 
 @app.route('/sign_up')
 def sign_up():
 
-    return "hello world"
+    return "hello world/sign_up"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=9091, load_dotenv=True,debug=True)
