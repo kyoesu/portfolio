@@ -15,11 +15,11 @@ def login(name,passw):
     else:
          cursor.execute(f'''select id,username from {table} where username='{name}' and pass='{passw}';''')
     res=cursor.fetchall()
-    #print(res)
+    print(type(res[0]))
     connection.close()
     if res!=[]:
-        nick=res[0,1]
-        id_u=res[0,0]
+        nick=res[0][1]
+        id_u=res[0][0]
         
         return (True,id_u,nick)
     else:
