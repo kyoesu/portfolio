@@ -54,4 +54,4 @@ def sign_up_back(name,email,passw):
 a,n,p=login ("hellmin","123457")
 print(f"проверка: {a};\n\r id={n}; name={p}")'''
 
-print(sign_up_back("qqq","aa@aa.aa","qwerty"))
+#print(sign_up_back("qqq","aa@aa.aa","qwerty"))
