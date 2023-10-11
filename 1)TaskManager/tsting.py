@@ -35,3 +35,26 @@
 9. Документация:
     - Создание документации, описывающей функциональность и использование приложения.
 '''
+
+"""
+регистрация - flask-login
+формы для регстрации - flask-WTF
+для управления сессиями - flask-login, LoginManager
+
+
+для уведомлений - flask-SoketIO
+для уведомлений по почте - smtplib
+
+
+
+"""
+from flask import Flask
+from flask_login import LoginManager, UserMixin
+
+app = Flask(__name__)
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=9091, load_dotenv=True,debug=True)
+
+
