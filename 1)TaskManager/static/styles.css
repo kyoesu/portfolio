@@ -3,6 +3,7 @@
 body{
     margin: auto;
     margin-top: -21px;
+    background: linear-gradient(90deg, #64FFF6 0%, #9F3DEC 20%, #8021F9 50%, #A540F4 80%, #64FFF6 100%);
 }
 header{
     width: 100%;
