@@ -49,7 +49,12 @@ def sign_up_back(name,email,passw):
     
     
 
-
+def to_hash(password):
+    import bcrypt
+    from secr import salt
+    #salt=bcrypt.gensalt() 
+    result = bcrypt.hashpw(password.encode('utf-8'),salt).decode("utf-8")[29::]
+    return result
 '''
 a,n,p=login ("hellmin","123457")
 print(f"проверка: {a};\n\r id={n}; name={p}")'''
