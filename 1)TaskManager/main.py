@@ -1,5 +1,5 @@
-from flask import Flask, render_template
-from flask_login import LoginManager, UserMixin, login_required
+from flask import Flask, render_template, flash, redirect, url_for
+from flask_login import LoginManager, UserMixin, login_required, logout_user
 from func import *
 
 #login_manager = LoginManager()
@@ -14,6 +14,13 @@ def index():
 def sign_in():
     
     return render_template("login.html") 
+
+@app.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    flash("Вы вышли из аккаунта", "success")
+    return redirect(url_for('login'))
 
 @app.route('/sign_up')
 def sign_up():
