@@ -39,7 +39,7 @@ def sign_up_back(name,email,passw):
         cursor.execute(f"select * from {table} where email='{email}'")
         if (cursor.fetchall()!=[]):
             connection.close()
-            return "email уже зарагастрирован"
+            return "email уже зарeгистрирован"
         cursor.execute(f"select * from {table} where username='{name}'")
         if (cursor.fetchall()!=[]):
             connection.close()
@@ -47,7 +47,17 @@ def sign_up_back(name,email,passw):
         connection.close()
         return("что-то пошло не так")
     
+def get_user_by_email(email):
+    table="test"
+    connection = sqlite3.connect('folio.db')
+    cursor = connection.cursor()
+    cursor.execute(f'''select * from {table} where email='{email}';''')
+    res = cursor.fetchall()
+    connection.close()
     
+    return res
+
+
 
 def to_hash(password):
     import bcrypt
