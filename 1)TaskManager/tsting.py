@@ -134,8 +134,16 @@ def before_request():
     connection= sqlite3.connect('folio.db')
     global cursor 
     cursor = connection.cursor()
-    db = get_db()
-    dbase = FDataBase(db)
+    #db = get_db()
+    
+
+@app.teardown_appcontext
+def close_db(error):
+    '''Закрываем соединение с БД, если оно было установлено'''
+    if hasattr(g, 'link_db'):
+        g.link_db.close()
+
+
 
 @app.route("/login", methods=["POST", "GET"])
 def login():

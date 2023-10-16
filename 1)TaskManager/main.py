@@ -4,7 +4,15 @@ from func import *
 
 #login_manager = LoginManager()
 app = Flask(__name__)
-#login_manager.init_app(app)
+
+app.config.from_object(__name__)
+
+'''login_manager = LoginManager(app)
+login_manager.login_view = 'login'
+login_manager.login_message = "Авторизуйтесь для доступа к закрытым страницам"
+login_manager.login_message_category = "info"#success
+'''
+
 
 @app.route('/')
 def index():
