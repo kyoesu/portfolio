@@ -128,7 +128,7 @@ login_manager.login_message_category = "info"
 
 @app.before_request
 def before_request():
-    """Установление соединения с БД перед выполнением запроса"""
+    ''''Установление соединения с БД перед выполнением запроса'''
     
     global connection
     connection= sqlite3.connect('folio.db')
@@ -140,9 +140,10 @@ def before_request():
 @app.teardown_appcontext
 def close_db(error):
     '''Закрываем соединение с БД, если оно было установлено'''
-    if hasattr(g, 'link_db'):
+    connection.close()
+    '''if hasattr(g, 'link_db'):
         g.link_db.close()
-
+'''
 
 
 @app.route("/login", methods=["POST", "GET"])

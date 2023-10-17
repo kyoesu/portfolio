@@ -14,6 +14,24 @@ login_manager.login_message_category = "info"#success
 '''
 
 
+@app.before_request
+def before_request():
+    '''Установление соединения с БД перед выполнением запроса'''
+    
+    global connection
+    connection= sqlite3.connect('folio.db')
+    global cursor 
+    cursor = connection.cursor()
+    #db = get_db()
+    
+
+@app.teardown_appcontext
+def close_db(error):
+    '''Закрываем соединение с БД, если оно было установлено'''
+    connection.close()
+
+
+
 @app.route('/')
 def index():
     return render_template("index.html")

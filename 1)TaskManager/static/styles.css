@@ -3,7 +3,10 @@
 body{
     margin: auto;
     margin-top: -21px;
-    background: linear-gradient(90deg, #64FFF6 0%, #9F3DEC 20%, #8021F9 50%, #A540F4 80%, #64FFF6 100%);
+    /*background: linear-gradient(90deg, #64FFF6 0%, #9F3DEC 20%, #8021F9 50%, #A540F4 80%, #64FFF6 100%);*/
+    background: linear-gradient(90deg, #cbf9f7 0%, #c1a0da 20%, #dac0fb 50%, #c1a0da 80%, #cbf9f7 100%);
+    min-height: calc(100vh - 32px);
+
 }
 header{
     width: 100%;
@@ -47,4 +50,7 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.content{
+    max-width: 1200px;
 }
