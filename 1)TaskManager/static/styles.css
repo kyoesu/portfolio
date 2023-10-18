@@ -51,6 +51,19 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.parent{
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    /*overflow: auto;*/
+}
 .content{
-    max-width: 1200px;
+    
+    width: 1200px;
+    /*justify-content: center;*/
+
 }
