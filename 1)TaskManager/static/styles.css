@@ -43,6 +43,7 @@ footer{
     display: flex;
     flex-direction: column;
     /*width: 21%;*/
+    max-width: 20%;
 }
 
 #dow{
@@ -62,8 +63,8 @@ footer{
     /*overflow: auto;*/
 }
 .content{
-    
-    width: 1200px;
+    max-width: 1200px;
+    min-width: 1000px;
     /*justify-content: center;*/
-
+    
 }

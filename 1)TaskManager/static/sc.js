@@ -20,3 +20,5 @@ function resetCounter() {
 function updateDisplay(val) {
     document.getElementById("counter-label").innerHTML = val;
 }
+
+var blok_login = getElementById("login")
