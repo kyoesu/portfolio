@@ -21,4 +21,12 @@ function updateDisplay(val) {
     document.getElementById("counter-label").innerHTML = val;
 }
 
-var blok_login = getElementById("login")
+let blok_login = document.getElementById("login");
+
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    //console.log("DOM fully loaded and parsed");
+    //console.log(blok_login);
+    //blok_login.innerText="Вход/Регистрация";
+    blok_login.innerHTML="<a href=localhost>Вход</a>/<a href=localhost>Регистрация</a>";
+  });

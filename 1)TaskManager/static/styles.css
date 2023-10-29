@@ -8,10 +8,15 @@ body{
     min-height: calc(100vh - 32px);
 
 }
+
 header{
     width: 100%;
     height: 150px;
     background: linear-gradient(to bottom left,#050b7c,#3d0101);
+}
+
+#login > a{
+    color:#ffffff;
 }
 #men{
     padding-top: 2vh;
@@ -28,7 +33,7 @@ footer{
     width: 90%;
     height: 500px;
     background: linear-gradient(to bottom left,#050b7c,#3d0101);
-    color: rgb(232, 217, 217);
+    color: #e8d9d9;
     padding: 5%;
 }
 

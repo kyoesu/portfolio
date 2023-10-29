@@ -3,13 +3,13 @@
 <head>
     <title>Task Manager</title>
     <!--для работы python-->
+    
     <link rel="stylesheet" href="{{ url_for('static', filename= 'styles.css') }}">
-    <script src="{{ url_for('static', filename= 'sc.js') }}"></script>
     <!--<link rel="icon" href="{{ url_for('static', filename= 'fav.ico') }}">-->
     <link rel="icon" href="{{ url_for('static', filename= 'logo.svg') }}">
     <!--для отладки в браузере-->
     <link rel="stylesheet" href="../static/styles.css">
-    <script src="../static/sc.js"></script>     
+         
 </head>
 
 <body>
@@ -24,7 +24,7 @@
         <div><h4>About Me</h4></div>
         <div><h4>Something else</h4></div>
         <div><h4>Contacts</h4></div> 
-        <div id="login"></div>
+        <div id="login">login</div>
     </div>
 </header>
 
@@ -69,8 +69,8 @@
 
 
 
-
-
+<script src="{{ url_for('static', filename= 'sc.js') }}"></script>
+<script src="../static/sc.js"></script>
 </body>
 </html>
 
